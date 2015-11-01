@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href = "styles.css" rel = "stylesheet">
+<title>Оля Гаврилик</title>
+<link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
+<meta charset = "windows-1251">
+<!-- <base href="http://www.название сайта/"> необходим для сохранения адреса сайта при сохранении его на ПК --> 
+<!--<script src="js/jquery-2.1.4.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script> -->
+
+<script src="js/reg.check.js"></script>
+</head>
+
+<body>
+
+<div id = "body">
+
+	<div id= "header">
+		<h2>ОЛЯ ГАВРИЛИК<br>ЗАПИСЫВАЮ МЫСЛИ, ВАШИ И СВОИ...</h2>
+	</div>
+	
+		<div id = "nav">
+		<ul>
+			<li class = menu><a href="index.html">Главная</a></li>
+			<li class = menu><a href="poems.html">Стихи</a></li>
+			<li class = menu><a href="audio.html">Аудио</a></li>
+			<li class = menu><a href="video.html">Видео</a></li>
+			<li class = menu><a href="login.html">Вход</a></li>
+		</lu>
+		</div>
+	
+	
+	<div id = "content">
+	
+		<br>
+	
+		<form id="RegForm" name="form" action = 'reg.php' method = "post">
+			Имя*<br>
+			<input class="required" type = "text" name = "name"/>
+				<br><br>
+			Фамилия*<br>
+			<input class="required" type = "text" name = "surname"/>
+				<br><br>
+			Дата рождения*<br>
+			<select class="required">
+				  <option selected></option>
+				  <script src="js/data.js"></script>
+			</select>
+			
+			<select class="required">
+				  <option selected></option>
+				  <option>Январь</option>
+				  <option>Февраль</option>
+				  <option>Март</option>
+				  <option>Апрель</option>
+				  <option>Май</option>
+				  <option>Июлнь</option>
+				  <option>Июль</option>
+				  <option>Август</option>
+				  <option>Сентябрь</option>
+				  <option>Октябрь</option>
+				  <option>Ноябрь</option>
+				  <option>Декабрь</option>
+			</select>
+			
+			<select class="required">
+				  <option selected></option>
+				  <script src="js/year.js"></script>
+			</select>
+				<br><br>
+			E-mail*<br>
+			<input class="required" type= "email" maxlength = "50" name = "email"/>
+				<br><br>
+			Логин*<br>
+			<input class="required" type = "text" name = "login"/>
+				<br><br>
+			Пароль*<br>
+			<input class="required" type = "password" name = "password"/>
+				<br><br>
+			Подтвердите пароль*<br>
+			<input class="required" type = "password" name = "repeadpassword"/>
+				<br><br>
+			Пол*<br>
+			М<input type = "radio" name = "gender" checked="checked"/>
+			&nbsp;&nbsp;	
+			Ж<input  type = "radio" name = "gender"/>
+				<br><br>
+			Загрузить аватар<br><br/>
+			<input type = "file" name = "ava" class = "button" />
+				<br><br>
+			С условиями использования сайта ознакомлен*
+			<input type = "checkbox" name = "confirm" id="rulles"/>
+			
+			<input type = "button" id="submitRegFormButton" class = "button" value = "Зарегистировать" onClick="reg(this.form)"/>	
+		</form>
+
+	</div>
+
+	<div id = "footer">
+		<p>&copy; Оля Гаврилик 2015</p>
+		<a class = "social" href="http://www.vk.com/olyagavrilik" target="_blank">
+			<img class = "social_img" src="social/vk.jpg" alt="vk">
+		</a>
+		<a class = "social" href="https://www.facebook.com/Heelga13" target="_blank">
+			<img class = "social_img" src="social/face.jpg" alt="facebook">
+		</a>
+		<a class = "social" href="https://twitter.com/heelga13" target="_blank">
+			<img class = "social_img" src="social/tw.jpg" alt="twitter">
+		</a>
+		<a class = "social" href="https://www.youtube.com/channel/UCDRV_bxcBo5M6DJGbbCGReA" target="_blank">
+			<img class = "social_img" src="social/youtube.jpg" alt="youtube">
+		</a>
+	</div>
+
+</div>
+
+</body>
+</html>

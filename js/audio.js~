@@ -1,0 +1,16 @@
+var audio = document.getElementById("play");
+var all_li = document.getElementsByTagName("li");
+
+
+for(i=0;i<all_li.length;i++){
+    all_li[i].onclick=function(){
+        audio.src=this.id;
+        audio.play();
+    }
+}
+
+audio.ended=function(){
+   this.src="audio/guitar_automate.mp3";
+   this.play();
+}
+
