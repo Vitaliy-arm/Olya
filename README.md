@@ -1,2 +1,0 @@
-# olya
-project
