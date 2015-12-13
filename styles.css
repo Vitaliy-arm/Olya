@@ -1,4 +1,11 @@
+html { 
+ position:relative; 
+ min-height:100%;
+	font-style: italic;
+}
+
 body{
+	height: 100%;
 	background: url(background/3.png);
 	repeat;
 	color: white;
@@ -6,8 +13,9 @@ body{
 
 #body{
 	margin: 0 auto;
-	max-width: 980px;
+	width: 980px;
 	font-style: italic;
+	padding-bottom: 100px;
 }
 
 h1, h2{
@@ -52,9 +60,9 @@ a:hover{
 	border: 2px solid #4682b4;
 }*/
 
-#content{
+/*#content{
 	min-height: 400px;
-}
+}*/
 
 .img{
 	max-width: 350px;
@@ -69,11 +77,6 @@ a:hover{
 
 .poems{
 	overflow: hidden;
-}
-
-.error{
-	border: 2px solid #FF7F50;
-	border-radius: 5px;
 }
 
 pre{
@@ -91,9 +94,15 @@ audio{
 	width:475px;
 }
 
+video{
+	width:475px;
+}
+
 #controls{
 	margin: 0 auto;
 	width:475px;
+	align: center;
+	text-align: center;
 }
 
 #musik{
@@ -117,8 +126,14 @@ ul#audio > li:hover{
 	background:#4682b4;
 }
 
-video{
-	width: 300px;
+table{
+	align: center;
+	border-collapse: collapse;
+	margin: auto;	
+}
+
+tr, td{
+	padding: 7px;
 }
 
 input{
@@ -151,18 +166,33 @@ select{
 }
 
 #footer{
+	position: absolute;
 	text-align: center;
+	bottom: 0;
+	min-height: 75px;
+	left:50%;
+	width: 980px;
+	margin-left:-490px;
 }
 
 .social_img{
 	width: 25px;
 	border: 1px solid #4682b4;
 	border-radius: 20px;
-	box-shadow: 0px 0px 5px #fff
+	box-shadow: 0px 0px 5px #fff;
 }
 
 .social_img:hover{
-	box-shadow: 0px 0px 5px #4682b4
+	box-shadow: 0px 0px 5px #4682b4;
+	animation-name: rotation;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rotation {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
 }
 
 .social{

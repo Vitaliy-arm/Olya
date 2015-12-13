@@ -3,10 +3,10 @@
 
 <head>
 <link href = "styles.css" rel = "stylesheet">
-<title>Оля Гаврилик</title>
+<title>РћР»СЏ Р“Р°РІСЂРёР»РёРє</title>
 <link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
-<meta charset = "windows-1251">
-<!-- <base href="http://www.название сайта/"> необходим для сохранения адреса сайта при сохранении его на ПК --> 
+<meta charset = "utf-8">
+<!-- <base href="http://www.РЅР°Р·РІР°РЅРёРµ СЃР°Р№С‚Р°/"> РЅРµРѕР±С…РѕРґРёРј РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ Р°РґСЂРµСЃР° СЃР°Р№С‚Р° РїСЂРё СЃРѕС…СЂР°РЅРµРЅРёРё РµРіРѕ РЅР° РџРљ --> 
 <!--<script src="js/jquery-2.1.4.js"></script>
 <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script> -->
 
@@ -18,88 +18,107 @@
 <div id = "body">
 
 	<div id= "header">
-		<h2>ОЛЯ ГАВРИЛИК<br>ЗАПИСЫВАЮ МЫСЛИ, ВАШИ И СВОИ...</h2>
+		<h2>РћР›РЇ Р“РђР’Р РР›РРљ<br>Р—РђРџРРЎР«Р’РђР® РњР«РЎР›Р, Р’РђРЁР Р РЎР’РћР...</h2>
 	</div>
 	
 		<div id = "nav">
 		<ul>
-			<li class = menu><a href="index.html">Главная</a></li>
-			<li class = menu><a href="poems.html">Стихи</a></li>
-			<li class = menu><a href="audio.html">Аудио</a></li>
-			<li class = menu><a href="video.html">Видео</a></li>
-			<li class = menu><a href="login.html">Вход</a></li>
+			<li class = menu><a href="index.html">Р“Р»Р°РІРЅР°СЏ</a></li>
+			<li class = menu><a href="poems.html">РЎС‚РёС…Рё</a></li>
+			<li class = menu><a href="audio.html">РђСѓРґРёРѕ</a></li>
+			<li class = menu><a href="video.html">Р’РёРґРµРѕ</a></li>
+			<li class = menu><a href="login.html">Р’С…РѕРґ</a></li>
 		</lu>
 		</div>
 	
 	
 	<div id = "content">
-	
 		<br>
-	
 		<form id="RegForm" name="form" action = 'reg.php' method = "post">
-			Имя*<br>
-			<input class="required" type = "text" name = "name"/>
-				<br><br>
-			Фамилия*<br>
-			<input class="required" type = "text" name = "surname"/>
-				<br><br>
-			Дата рождения*<br>
-			<select class="required">
-				  <option selected></option>
-				  <script src="js/data.js"></script>
-			</select>
+			<table>
+				<tr>
+					<td>РРјСЏ*</td>
+					<td><input class="required" type = "text" name = "name"/></td>
+				</tr>
+
+				<tr>
+					<td>Р¤Р°РјРёР»РёСЏ*</td>
+					<td><input class="required" type = "text" name = "surname"/></td>
+				</tr>
+
+				<tr>
+					<td>Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ*</td>
+					<td><select class="required">
+				  			<option selected></option>
+				  			<script src="js/data.js"></script>
+						</select>
 			
-			<select class="required">
-				  <option selected></option>
-				  <option>Январь</option>
-				  <option>Февраль</option>
-				  <option>Март</option>
-				  <option>Апрель</option>
-				  <option>Май</option>
-				  <option>Июлнь</option>
-				  <option>Июль</option>
-				  <option>Август</option>
-				  <option>Сентябрь</option>
-				  <option>Октябрь</option>
-				  <option>Ноябрь</option>
-				  <option>Декабрь</option>
-			</select>
+						<select class="required">
+						  <option selected></option>
+						  <option>РЇРЅРІР°СЂСЊ</option>
+						  <option>Р¤РµРІСЂР°Р»СЊ</option>
+						  <option>РњР°СЂС‚</option>
+						  <option>РђРїСЂРµР»СЊ</option>
+						  <option>РњР°Р№</option>
+						  <option>РСЋР»РЅСЊ</option>
+						  <option>РСЋР»СЊ</option>
+						  <option>РђРІРіСѓСЃС‚</option>
+						  <option>РЎРµРЅС‚СЏР±СЂСЊ</option>
+						  <option>РћРєС‚СЏР±СЂСЊ</option>
+						  <option>РќРѕСЏР±СЂСЊ</option>
+						  <option>Р”РµРєР°Р±СЂСЊ</option>
+						</select>
 			
-			<select class="required">
-				  <option selected></option>
-				  <script src="js/year.js"></script>
-			</select>
-				<br><br>
-			E-mail*<br>
-			<input class="required" type= "email" maxlength = "50" name = "email"/>
-				<br><br>
-			Логин*<br>
-			<input class="required" type = "text" name = "login"/>
-				<br><br>
-			Пароль*<br>
-			<input class="required" type = "password" name = "password"/>
-				<br><br>
-			Подтвердите пароль*<br>
-			<input class="required" type = "password" name = "repeadpassword"/>
-				<br><br>
-			Пол*<br>
-			М<input type = "radio" name = "gender" checked="checked"/>
-			&nbsp;&nbsp;	
-			Ж<input  type = "radio" name = "gender"/>
-				<br><br>
-			Загрузить аватар<br><br/>
-			<input type = "file" name = "ava" class = "button" />
-				<br><br>
-			С условиями использования сайта ознакомлен*
-			<input type = "checkbox" name = "confirm" id="rulles"/>
-			
-			<input type = "button" id="submitRegFormButton" class = "button" value = "Зарегистировать" onClick="reg(this.form)"/>	
+						<select class="required">
+							  <option selected></option>
+							  <script src="js/year.js"></script>
+						</select></td>
+				</tr>
+
+				<tr>
+					<td>E-mail*</td>
+					<td><input class="required" type= "email" maxlength = "50" name = "email"/></td>
+				</tr>
+
+				<tr>
+					<td>Р›РѕРіРёРЅ*</td>
+					<td><input class="required" type = "text" name = "login"/></td>
+				</tr>
+
+				<tr>
+					<td>РџР°СЂРѕР»СЊ*</td>
+					<td><input class="required" type = "password" name = "password"/></td>
+				</tr>
+
+				<tr>
+					<td>РџРѕРґС‚РІРµСЂРґРёС‚Рµ РїР°СЂРѕР»СЊ*</td>
+					<td><input class="required" type = "password" name = "repeadpassword"/></td>
+				</tr>
+
+				<tr>
+					<td>РџРѕР»*</td>
+					<td>Рњ<input type = "radio" name = "gender" checked="checked"/>
+						&nbsp;&nbsp;	
+						Р–<input  type = "radio" name = "gender"/></td>
+				</tr>
+
+				<tr>
+					<td>Р—Р°РіСЂСѓР·РёС‚СЊ С„РѕС‚Рѕ РїСЂРѕС„РёР»СЏ</td>
+					<td><input type = "file" name = "ava" class = "button" /></td>
+				</tr>
+
+				<tr>
+					<td>РЎ СѓСЃР»РѕРІРёСЏРјРё СЃР°Р№С‚Р° РѕР·РЅР°РєРѕРјР»РµРЅ(Р°)*&nbsp;<input type = "checkbox" name = "confirm" id="rulles"/></td>
+					<td><input type = "button" id="submitRegFormButton" class = "button" value = "Р—Р°СЂРµРіРёСЃС‚РёСЂРѕРІР°С‚СЊ" onClick="reg(this.form)"/></td>
+				</tr>
+			</table>
 		</form>
 
 	</div>
+</div>
 
 	<div id = "footer">
-		<p>&copy; Оля Гаврилик 2015</p>
+		<p>&copy; РћР»СЏ Р“Р°РІСЂРёР»РёРє 2015&nbsp;
 		<a class = "social" href="http://www.vk.com/olyagavrilik" target="_blank">
 			<img class = "social_img" src="social/vk.jpg" alt="vk">
 		</a>
@@ -112,9 +131,10 @@
 		<a class = "social" href="https://www.youtube.com/channel/UCDRV_bxcBo5M6DJGbbCGReA" target="_blank">
 			<img class = "social_img" src="social/youtube.jpg" alt="youtube">
 		</a>
+		</p>
 	</div>
 
-</div>
+
 
 </body>
 </html>

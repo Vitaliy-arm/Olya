@@ -3,10 +3,10 @@
 
 <head>
 <link href = "styles.css" rel = "stylesheet">
-<title>Оля Гаврилик</title>
+<title>РћР»СЏ Р“Р°РІСЂРёР»РёРє</title>
 <link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
-<meta charset = "windows-1251">
-<!-- <base href="http://www.название сайта/"> необходим для сохранения адреса сайта при сохранении его на ПК --> 
+<meta charset = "utf-8">
+<!-- <base href="http://www.РЅР°Р·РІР°РЅРёРµ СЃР°Р№С‚Р°/"> РЅРµРѕР±С…РѕРґРёРј РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ Р°РґСЂРµСЃР° СЃР°Р№С‚Р° РїСЂРё СЃРѕС…СЂР°РЅРµРЅРёРё РµРіРѕ РЅР° РџРљ --> 
 </head>
 
 <body>
@@ -14,34 +14,43 @@
 <div id = "body">
 
 	<div id= "header">
-		<h2>ОЛЯ ГАВРИЛИК<br>ЗАПИСЫВАЮ МЫСЛИ, ВАШИ И СВОИ...</h2>
+		<h2>РћР›РЇ Р“РђР’Р РР›РРљ<br>Р—РђРџРРЎР«Р’РђР® РњР«РЎР›Р, Р’РђРЁР Р РЎР’РћР...</h2>
 	</div>
 	
 		<div id = "nav">
 		<ul>
-			<li class = menu><a href="index.html">Главная</a></li>
-			<li class = menu><a href="poems.html">Стихи</a></li>
-			<li class = menu><a href="audio.html">Аудио</a></li>
-			<li class = menu><a href="video.html">Видео</a></li>
-			<li class = menu><a href="login.html">Вход</a></li>
+			<li class = menu><a href="index.html">Р“Р»Р°РІРЅР°СЏ</a></li>
+			<li class = menu><a href="poems.html">РЎС‚РёС…Рё</a></li>
+			<li class = menu><a href="audio.html">РђСѓРґРёРѕ</a></li>
+			<li class = menu><a href="video.html">Р’РёРґРµРѕ</a></li>
+			<!-- <li class = menu><a href="login.html">Р’С…РѕРґ</a></li> -->
 		</lu>
 		</div>
 	
 	<div id = "content">
 
-<video controls = "controls">
-	<source src="video/not_with_those.mp4" type="video/mp4" codecs= "avcl.42E01E, mp4a.40.2" />
-	<source src = "" type = 'video/ogg; codecs= "theora, vordis"' />
-</video>
+		<br/>
 
-<video controls = "controls">
-<source src="video/the_house_of_my_soul.mp4" type="video/mp4" codecs= "avcl.42E01E, mp4a.40.2" />
-</video>
+		<div id = "controls">
+			<video src="video/not_with_those.mp4" controls id= "play"></video>
+		</div>
+		
+		<br/>
+
+		<div id = "musik">
+			<ul id = "audio">
+				<li id="video/not_with_those.mp4">РќРµ СЃ С‚РµРјРё</li>
+				<li id="video/the_house_of_my_soul.mp4">Р”РѕРј РјРѕРµР№ РґСѓС€Рё</li>
+				<!-- <li id="video/РћР»СЏ Р“Р°РІСЂРёР»РёРє, 51 РєР°РЅР°Р».mp4">РћР»СЏ Р“Р°РІСЂРёР»РёРє, 51 РєР°РЅР°Р»</li> -->
+			</ul>
+			<script src="js/video.js"></script>
+		</div>
 
 	</div>
+</div>
 
 	<div id = "footer">
-		<p>&copy; Оля Гаврилик 2015</p>
+		<p>&copy; РћР»СЏ Р“Р°РІСЂРёР»РёРє 2015&nbsp;
 		<a class = "social" href="http://www.vk.com/olyagavrilik" target="_blank">
 			<img class = "social_img" src="social/vk.jpg" alt="vk">
 		</a>
@@ -54,9 +63,9 @@
 		<a class = "social" href="https://www.youtube.com/channel/UCDRV_bxcBo5M6DJGbbCGReA" target="_blank">
 			<img class = "social_img" src="social/youtube.jpg" alt="youtube">
 		</a>
+		</p>
 	</div>
 
-</div>
 
 </body>
 </html>
